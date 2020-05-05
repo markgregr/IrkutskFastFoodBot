@@ -1,0 +1,1 @@
+worker: python mark_bot.py

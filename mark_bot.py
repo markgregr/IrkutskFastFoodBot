@@ -172,7 +172,7 @@ def start_start(message):
 
 @bot.message_handler(commands=['location'])
 def start_start(message):
-    bot.send_message(message.chat.id, 'Отправьте свою геолокацию', reply_markup=pandas.markup_loc)
+    bot.send_message(message.chat.id, 'Отправьте свою геолокацию\nПеред этим включите местоположение на своём телефоне', reply_markup=pandas.markup_loc)
 @bot.message_handler(commands=['help'])
 def start_start(message):
     bot.send_message(message.chat.id, pandas.command, reply_markup=pandas.markup_info)
@@ -187,7 +187,7 @@ def procces_callback_button_cont(call):
         bot.send_message(call.message.chat.id, 'Выберите ресторан', reply_markup=pandas.markup_kupon)
     if call.data == 'get_loc':
         bot.delete_message(call.message.chat.id, call.message.message_id)
-        bot.send_message(call.message.chat.id, 'Отправьте свою геолокацию/n Перед этим включите местоположение на своём телефоне', reply_markup=pandas.markup_loc)
+        bot.send_message(call.message.chat.id, 'Отправьте свою геолокацию\nПеред этим включите местоположение на своём телефоне', reply_markup=pandas.markup_loc)
     if call.data == 'get_loc_back':
         bot.send_message(call.message.chat.id, pandas.info, reply_markup=pandas.markup_menu)
     if call.data == 'get_menu':

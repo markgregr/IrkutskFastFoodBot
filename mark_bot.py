@@ -103,6 +103,7 @@ def subway_parse():
                           pandas.PARSE_SUBWAY['class_address_teg'],
                           pandas.PARSE_SUBWAY['class_address'])
     del CONTENT[8]
+    del CONTENT[8]
     for i in CONTENT:
         geolocator = Nominatim(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; '
                'x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'

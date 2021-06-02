@@ -39,7 +39,7 @@ six==1.14.0
 soupsieve==2.0
 tornado==6.0.4
 tqdm==4.46.0
-urllib3==1.25.8
+urllib3==1.26.5
 w3lib==1.21.0
 websockets==8.1
 yandex-geocoder==2.0.0
